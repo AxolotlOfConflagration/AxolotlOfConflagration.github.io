@@ -53,7 +53,7 @@ class ModelPreview {
             this.material.diffuseTexture = videoTexture;
 
             setTimeout(() => {
-                //Module._reset();
+                Module._reset();
 
                 this.scene.onAfterRenderObservable.add(() => {
                     findMarkersInImage(videoTexture, this.models, this.framesSinceSeen, translateRotateMesh);
